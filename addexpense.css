@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #6a67ce;
+    padding: 15px 30px;
+    text-align: center;
+    color: white;
+}
+
+.website-name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    padding: 20px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Welcome Section */
+#welcome-section {
+    background: linear-gradient(135deg, #6a67ce, #ab82f1);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#welcome-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.options-section {
+    margin-top: 20px;
+}
+
+.option-btn {
+    padding: 10px 20px;
+    background-color: #ffbc00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.option-btn:hover {
+    background-color: #e0a700;
+}
+
+/* App Section */
+.section {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #6a67ce;
+}
+
+input[type="number"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a67ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #574bdb;
+}
+
+#budget-display, #remaining-budget {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f7f9fc;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
