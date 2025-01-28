@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanceBot</title>
+  <link rel="icon" sizes="48x48" href="favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="botstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+      <a href="#" id="home-link" class="active">Home</a>
+      <a href="demo.html" id="budget-link">Set Budget</a>
+      <a href="addexpense.html" id="expense-link">Add Expense</a>
+      <a href="#howitworks" id="advice-link">How It Works</a>
+      <a href="demo.html" id="view-expenses-link">View Expenses</a>
+      <a href="botindex.html" id="support-link">Support</a>
+      <a href="login.html" id="login-link">Login</a>
+      <a href="signup.html" id="signup-link">Sign Up</a>
+    </nav>
+  </header>
+
+  <div class="chatbot-container">
+    <header class="chatbot-header">
+      <h1>FinanceBot</h1>
+      <p>Your personal financial assistant</p>
+    </header>
+
+    <div id="chat-window" class="chat-window">
+      <!-- Messages will appear here -->
+
+      <!-- Typing Indicator (Initially hidden, show when bot is typing) -->
+      <div id="typing-indicator" class="typing-indicator" style="display: none;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <div class="chat-input-container">
+      <input id="chat-input" type="text" placeholder="Ask me anything..." autocomplete="off">
+      <button id="send-button" class="send-button">Send</button>
+    </div>
+  </div>
+
+  <script src="botscrpit.js"></script>
+</body>
+</html>
