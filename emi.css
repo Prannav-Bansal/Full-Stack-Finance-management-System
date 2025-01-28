@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a67ce, #ab82f1);
+    color: #333;
+    text-rendering: optimizeLegibility;
+}
+
+ /* Header Section */
+header {
+    background: #6a67ce;
+    padding: 15px 30px;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Calculator Container */
+.calculator-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.calculator-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.input-section {
+    flex: 2;
+    min-width: 300px;
+}
+
+.result-section {
+    flex: 1;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sliders */
+.slider-group {
+    margin: 20px 0;
+}
+
+.slider-group label {
+    display: block;
+    font-size: 16px;
+    color: #6a67ce;
+    font-weight: bold;
+}
+
+.slider-group input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.slider-group span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* EMI Value Display */
+.emi-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6a67ce;
+    margin-bottom: 10px;
+}
+
+/* CTA Button */
+.cta-btn {
+    padding: 10px 15px;
+    background-color: #ffbc00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+.cta-btn:active {
+    background-color: #c78e00;
+    transform: translateY(0);
+}
+
+/* Chart Canvas */
+canvas {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator-content {
+        flex-direction: column;
+    }
+
+    .result-section {
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
