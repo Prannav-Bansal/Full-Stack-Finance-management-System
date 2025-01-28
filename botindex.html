@@ -9,9 +9,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="botstyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+      background-color: #6a67ce;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .navbar a:hover {
+      background-color: #555;
+    }
+    .chatbot-container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .info-section {
+      text-align: center;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      background-color: #e8f0fe;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .info-section h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+    .info-section p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Section -->
+  <!-- Navigation Bar -->
   <header>
     <nav class="navbar">
       <a href="index.html" id="home-link" class="active">Home</a>
@@ -24,6 +75,13 @@
     </nav>
   </header>
 
+  <!-- Informational Section -->
+  <div class="info-section">
+    <h2>Welcome to FinanceBot</h2>
+    <p>Manage your expenses, set budgets, and get personalized financial advice to make smarter money decisions.</p>
+  </div>
+
+  <!-- Chatbot Section -->
   <div class="chatbot-container">
     <header class="chatbot-header">
       <h1>FinanceBot</h1>
